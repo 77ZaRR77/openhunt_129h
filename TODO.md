@@ -34,4 +34,6 @@ then second would be very useful, though searching didn't give any results nor w
 
 ![screenshot](/docs/JUHOX_files.JPG)
 
+I've made a test EFH map without the mentioned file though, needs more investigation to make it work fine and write mini-instuction.
+
 
