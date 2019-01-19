@@ -1,15 +1,17 @@
-OpenHunt mod for Quake 3 Arena originally made by Jurgen "Juhox" Hoffmann.
+OpenHunt mod for Quake 3 Arena
 =================
-
+Originally made by Jurgen "Juhox" Hoffmann.
 This repo has working stable preinstalled OpenHunt 
 currently with 1.29h q3 gamecode
 based on Eugene C. improved fast q3tools 
 and his mod folder structure for comfort use.
 
 
-#### For using with Hunt mod better simply delete original hunt.pk3 folder vm and throw newest openhunt in mod folder.
+Installation:
+Delete folder vm from original hunt.pk3 and throw newest openhunt.pk3 in the mod folder.
 
-For additional info, check docs/OpenHunt_readme.txt
+#### [Additional info](/docs/OpenHunt_readme.txt)
+
 
 
 

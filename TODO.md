@@ -21,7 +21,7 @@ also possible to change grapplinghook type by cvar.
 
 Only autoexec.cfg added currently, since addons should be in newest repo, imho
 
-* small fov fix thanks to ZTM for 1.29h in autoexec.cfg file
+* small fov fix thanks to ZTM for 1.29h in autoexec.cfg file, in-game player need to press "z" for one time.
 * zzz-hunt_patch.pk3  for fixing gfx in ffa gamemode
 * replacement for - hunt.pk3 and hunt_hellmodels.pk3, now it's red blood (still needs improvement a bit) 
 both .pk3s gfx blood textures and models/gibs texture
@@ -32,6 +32,6 @@ Thoose two files made by the original author from his website are missed.
 If first file is probably not necessary because of new improved q3tools by Eugene C., 
 then second would be very useful, though searching didn't give any results nor webarchive.
 
-![screenshot](/../docs/JUHOX_files.JPG?raw=true)
+![screenshot](/../docs/JUHOX_files.JPG)
 
 
