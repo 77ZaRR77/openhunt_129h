@@ -32,6 +32,6 @@ Thoose two files made by the original author from his website are missed.
 If first file is probably not necessary because of new improved q3tools by Eugene C., 
 then second would be very useful, though searching didn't give any results nor webarchive.
 
-![screenshot](/../docs/JUHOX_files.JPG)
+![screenshot](/docs/JUHOX_files.JPG)
 
 
