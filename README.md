@@ -7,7 +7,8 @@ based on Eugene C. improved fast q3tools
 and his mod folder structure for comfort use.
 
 
-Installation:
+#### Installation:
+
 Delete folder vm from original hunt.pk3 and throw newest openhunt.pk3 in the mod folder.
 
 #### [Original OpenHunt readme](/docs/OpenHunt_readme.txt)
