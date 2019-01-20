@@ -55,7 +55,7 @@ MULTIPLAYER MENU (SERVER BROWSER)
 #define ID_CREATE			21
 #define ID_CONNECT			22
 #define ID_REMOVE			23
-#define ID_PUNKBUSTER 24
+//#define ID_PUNKBUSTER 24
 
 #define GR_LOGO				30
 #define GR_LETTERS			31
@@ -1247,7 +1247,7 @@ static void ArenaServers_Event( void* ptr, int event ) {
 		ArenaServers_Remove();
 		ArenaServers_UpdateMenu();
 		break;
-
+/*
 	case ID_PUNKBUSTER:
 		if (g_arenaservers.punkbuster.curvalue)
 		{
@@ -1258,6 +1258,8 @@ static void ArenaServers_Event( void* ptr, int event ) {
 			UI_ConfirmMenu_Style( "Disable Punkbuster?", UI_CENTER|UI_INVERSE|UI_SMALLFONT, (voidfunc_f)NULL, Punkbuster_ConfirmDisable );
 		}
 		break;
+*/
+
 	}
 }
 
