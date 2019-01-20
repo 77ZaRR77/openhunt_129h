@@ -8,7 +8,8 @@ and his mod folder structure for comfort use.
 
 
 #### Installation:
-Delete folder vm from original hunt.pk3 and throw newest openhunt.pk3 in the mod folder.
+1.[Get original Hunt mod](https://github.com/77ZaRR77/hunt-mod)
+2.Delete folder vm from original hunt.pk3 and throw newest openhunt.pk3 in the mod folder.
 
 #### [Original OpenHunt readme](/docs/OpenHunt_readme.txt)
 #### [TODO](TODO.md)
