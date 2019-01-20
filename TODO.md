@@ -19,8 +19,7 @@ also possible to change grapplinghook type by cvar.
 
 #### Addons were made 
 
-Only autoexec.cfg added currently, since addons should be in newest repo, imho
-
+* autoexec.cfg fix fov
 * small fov fix thanks to ZTM for 1.29h in autoexec.cfg file, in-game player need to press "z" for one time.
 * zzz-hunt_patch.pk3  for fixing gfx in ffa gamemode
 * replacement for - hunt.pk3 and hunt_hellmodels.pk3, now it's red blood (still needs improvement a bit) 
