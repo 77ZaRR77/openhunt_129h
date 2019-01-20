@@ -1,3 +1,6 @@
+MOST IMPORTANT FIRST TO MOVE INTO NEWEST GAMECODE
+ BASEQ3E FOR EXAMPLE OR ioq3 then bugfix and others.
+
 #### BUGS n FIX
 
 
@@ -12,6 +15,7 @@ also possible to change grapplinghook type by cvar.
 
 #### FEATURES
 
+* include g_unlagged.c
 * More agressive/fast reaction monsters, especially guard type
 * look if possible to make monster-bots and bots separate so real bots can be added
 * investigate more about mapping for gamemode "Escape from Hell" (EFH).
