@@ -4,6 +4,9 @@ hunt/huntmod/q3config.cfg
 hunt/huntmod/q3history
 hunt/huntmod/games.log
 
+*.cbp
+*.layout
+
 # Prerequisites
 *.d
 

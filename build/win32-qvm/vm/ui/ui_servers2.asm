@@ -165,7 +165,7 @@ line 238
 ;39:#define ART_UNKNOWNMAP			"menu/art/unknownmap"
 ;40:#define ART_REMOVE0				"menu/art/delete_0"
 ;41:#define ART_REMOVE1				"menu/art/delete_1"
-;42:#define ART_PUNKBUSTER		"menu/art/pblogo"
+;42://#define ART_PUNKBUSTER		    "menu/art/pblogo"
 ;43:
 ;44:#define ID_MASTER			10
 ;45:#define ID_GAMETYPE			11
@@ -287,7 +287,7 @@ line 238
 ;161:	int		maxPing;
 ;162:	qboolean bPB;
 ;163:
-;164:} servernode_t; 
+;164:} servernode_t;
 ;165:
 ;166:typedef struct {
 ;167:	char			buff[MAX_LISTBOXWIDTH];
@@ -325,7 +325,7 @@ line 238
 ;199:	char*				items[MAX_LISTBOXITEMS];
 ;200:	int					numqueriedservers;
 ;201:	int					*numservers;
-;202:	servernode_t		*serverlist;	
+;202:	servernode_t		*serverlist;
 ;203:	int					currentping;
 ;204:	qboolean			refreshservers;
 ;205:	int					nextpingtime;
@@ -866,7 +866,7 @@ ADDRGP4 g_arenaservers+1008+4
 ADDRGP4 $171
 ASGNP4
 line 344
-;343:	
+;343:
 ;344:	}
 LABELV $173
 line 347
@@ -1817,7 +1817,7 @@ LABELV $329
 LABELV $326
 line 512
 ;511:
-;512:		Com_sprintf( buff, MAX_LISTBOXWIDTH, "%-20.20s %-12.12s %2d/%2d %-8.8s %3s %s%3d " S_COLOR_YELLOW "%s", 
+;512:		Com_sprintf( buff, MAX_LISTBOXWIDTH, "%-20.20s %-12.12s %2d/%2d %-8.8s %3s %s%3d " S_COLOR_YELLOW "%s",
 ADDRLP4 16
 INDIRP4
 ARGP4
@@ -2131,7 +2131,7 @@ CNSTI4 1
 SUBI4
 ASGNI4
 line 565
-;565:	}	
+;565:	}
 LABELV $365
 line 568
 ;566:
@@ -2249,7 +2249,7 @@ CNSTI4 1
 SUBI4
 ASGNI4
 line 581
-;581:	}	
+;581:	}
 LABELV $382
 line 583
 ;582:
@@ -3353,7 +3353,7 @@ INDIRP4
 INDIRI4
 ASGNI4
 line 801
-;801:		g_arenaservers.numqueriedservers = *g_arenaservers.numservers; 
+;801:		g_arenaservers.numqueriedservers = *g_arenaservers.numservers;
 ADDRGP4 g_arenaservers+13936
 ADDRGP4 g_arenaservers+13940
 INDIRP4
@@ -3363,7 +3363,7 @@ line 802
 ;802:	}
 LABELV $467
 line 805
-;803:	
+;803:
 ;804:	// sort
 ;805:	qsort( g_arenaservers.serverlist, *g_arenaservers.numservers, sizeof( servernode_t ), ArenaServers_Compare);
 ADDRGP4 g_arenaservers+13944
@@ -3880,7 +3880,7 @@ INDIRI4
 CNSTI4 3
 NEI4 $542
 line 933
-;933:		  strcpy( adrstr, g_arenaservers.favoriteaddresses[g_arenaservers.currentping] ); 		
+;933:		  strcpy( adrstr, g_arenaservers.favoriteaddresses[g_arenaservers.currentping] );
 ADDRLP4 4
 ARGP4
 ADDRGP4 g_arenaservers+13948
@@ -3962,7 +3962,7 @@ ADDRGP4 trap_Cmd_ExecuteText
 CALLV
 pop
 line 944
-;942:		
+;942:
 ;943:		// advance to next server
 ;944:		g_arenaservers.currentping++;
 ADDRLP4 1116
@@ -4851,7 +4851,7 @@ INDIRP4
 INDIRI4
 ASGNI4
 line 1127
-;1127:		g_arenaservers.numqueriedservers = *g_arenaservers.numservers; 
+;1127:		g_arenaservers.numqueriedservers = *g_arenaservers.numservers;
 ADDRGP4 g_arenaservers+13936
 ADDRGP4 g_arenaservers+13940
 INDIRP4
@@ -4896,7 +4896,7 @@ INDIRI4
 CNSTI4 0
 EQI4 $662
 line 1141
-;1141:	{		
+;1141:	{
 line 1143
 ;1142:		//trap_SetPbClStatus(1);
 ;1143:	}
@@ -5371,9 +5371,9 @@ ADDRGP4 $676
 JUMPV
 LABELV $720
 line 1252
-;1250:	
+;1250:
 ;1251:	case ID_PUNKBUSTER:
-;1252:		if (g_arenaservers.punkbuster.curvalue)			
+;1252:		if (g_arenaservers.punkbuster.curvalue)
 ADDRGP4 g_arenaservers+14996+64
 INDIRI4
 CNSTI4 0
@@ -5481,7 +5481,7 @@ INDIRI4
 CNSTI4 0
 EQI4 $734
 line 1286
-;1286:		ArenaServers_StopRefresh();	
+;1286:		ArenaServers_StopRefresh();
 ADDRGP4 ArenaServers_StopRefresh
 CALLV
 pop
@@ -6570,90 +6570,26 @@ line 1516
 ADDRGP4 g_arenaservers+1944+60
 ADDRGP4 $1077
 ASGNP4
-line 1518
-;1517:
-;1518:	g_arenaservers.punkbuster.generic.type			= MTYPE_SPINCONTROL;
-ADDRGP4 g_arenaservers+14996
-CNSTI4 3
-ASGNI4
-line 1519
-;1519:	g_arenaservers.punkbuster.generic.name			= "Punkbuster:";
-ADDRGP4 g_arenaservers+14996+4
-ADDRGP4 $1081
-ASGNP4
-line 1520
-;1520:	g_arenaservers.punkbuster.generic.flags			= QMF_PULSEIFFOCUS|QMF_SMALLFONT;
-ADDRGP4 g_arenaservers+14996+44
-CNSTU4 258
-ASGNU4
-line 1521
-;1521:	g_arenaservers.punkbuster.generic.callback		= ArenaServers_Event;
-ADDRGP4 g_arenaservers+14996+48
-ADDRGP4 ArenaServers_Event
-ASGNP4
-line 1522
-;1522:	g_arenaservers.punkbuster.generic.id			= ID_PUNKBUSTER;
-ADDRGP4 g_arenaservers+14996+8
-CNSTI4 24
-ASGNI4
-line 1523
-;1523:	g_arenaservers.punkbuster.generic.x				= 480+32;
-ADDRGP4 g_arenaservers+14996+12
-CNSTI4 512
-ASGNI4
-line 1524
-;1524:	g_arenaservers.punkbuster.generic.y				= 144;
-ADDRGP4 g_arenaservers+14996+16
-CNSTI4 144
-ASGNI4
-line 1525
-;1525:	g_arenaservers.punkbuster.itemnames				= punkbuster_items;
-ADDRGP4 g_arenaservers+14996+76
-ADDRGP4 punkbuster_items
-ASGNP4
-line 1527
-;1526:	
-;1527:	g_arenaservers.pblogo.generic.type			= MTYPE_BITMAP;
-ADDRGP4 g_arenaservers+15092
-CNSTI4 6
-ASGNI4
-line 1528
-;1528:	g_arenaservers.pblogo.generic.name			= ART_PUNKBUSTER;
-ADDRGP4 g_arenaservers+15092+4
-ADDRGP4 $1097
-ASGNP4
-line 1529
-;1529:	g_arenaservers.pblogo.generic.flags			= QMF_LEFT_JUSTIFY|QMF_INACTIVE;
-ADDRGP4 g_arenaservers+15092+44
-CNSTU4 16388
-ASGNU4
-line 1530
-;1530:	g_arenaservers.pblogo.generic.x				= 526;
-ADDRGP4 g_arenaservers+15092+12
-CNSTI4 526
-ASGNI4
-line 1531
-;1531:	g_arenaservers.pblogo.generic.y				= 176;
-ADDRGP4 g_arenaservers+15092+16
-CNSTI4 176
-ASGNI4
-line 1532
-;1532:	g_arenaservers.pblogo.width					= 32;
-ADDRGP4 g_arenaservers+15092+76
-CNSTI4 32
-ASGNI4
-line 1533
-;1533:	g_arenaservers.pblogo.height				= 16;
-ADDRGP4 g_arenaservers+15092+80
-CNSTI4 16
-ASGNI4
-line 1534
-;1534:	g_arenaservers.pblogo.errorpic				= ART_UNKNOWNMAP;
-ADDRGP4 g_arenaservers+15092+64
-ADDRGP4 $877
-ASGNP4
 line 1536
-;1535:
+;1517:/*
+;1518:	g_arenaservers.punkbuster.generic.type			= MTYPE_SPINCONTROL;
+;1519:	g_arenaservers.punkbuster.generic.name			= "Punkbuster:";
+;1520:	g_arenaservers.punkbuster.generic.flags			= QMF_PULSEIFFOCUS|QMF_SMALLFONT;
+;1521:	g_arenaservers.punkbuster.generic.callback		= ArenaServers_Event;
+;1522:	g_arenaservers.punkbuster.generic.id			= ID_PUNKBUSTER;
+;1523:	g_arenaservers.punkbuster.generic.x				= 480+32;
+;1524:	g_arenaservers.punkbuster.generic.y				= 144;
+;1525:	g_arenaservers.punkbuster.itemnames				= punkbuster_items;
+;1526:
+;1527:	g_arenaservers.pblogo.generic.type			= MTYPE_BITMAP;
+;1528:	g_arenaservers.pblogo.generic.name			= ART_PUNKBUSTER;
+;1529:	g_arenaservers.pblogo.generic.flags			= QMF_LEFT_JUSTIFY|QMF_INACTIVE;
+;1530:	g_arenaservers.pblogo.generic.x				= 526;
+;1531:	g_arenaservers.pblogo.generic.y				= 176;
+;1532:	g_arenaservers.pblogo.width					= 32;
+;1533:	g_arenaservers.pblogo.height				= 16;
+;1534:	g_arenaservers.pblogo.errorpic				= ART_UNKNOWNMAP;
+;1535:*/
 ;1536:	Menu_AddItem( &g_arenaservers.menu, (void*) &g_arenaservers.banner );
 ADDRGP4 g_arenaservers
 ARGP4
@@ -6827,27 +6763,11 @@ ARGP4
 ADDRGP4 Menu_AddItem
 CALLV
 pop
-line 1559
-;1558:
-;1559:	Menu_AddItem( &g_arenaservers.menu, (void*) &g_arenaservers.punkbuster );
-ADDRGP4 g_arenaservers
-ARGP4
-ADDRGP4 g_arenaservers+14996
-ARGP4
-ADDRGP4 Menu_AddItem
-CALLV
-pop
-line 1560
-;1560:	Menu_AddItem( &g_arenaservers.menu, (void*) &g_arenaservers.pblogo );
-ADDRGP4 g_arenaservers
-ARGP4
-ADDRGP4 g_arenaservers+15092
-ARGP4
-ADDRGP4 Menu_AddItem
-CALLV
-pop
 line 1562
-;1561:	
+;1558:
+;1559:	//Menu_AddItem( &g_arenaservers.menu, (void*) &g_arenaservers.punkbuster );
+;1560:	//Menu_AddItem( &g_arenaservers.menu, (void*) &g_arenaservers.pblogo );
+;1561:
 ;1562:	ArenaServers_LoadFavorites();
 ADDRGP4 ArenaServers_LoadFavorites
 CALLV
@@ -6884,7 +6804,7 @@ line 1567
 ADDRLP4 8
 INDIRI4
 CNSTI4 1
-LTI4 $1132
+LTI4 $1098
 line 1568
 ;1568:		value--;
 ADDRLP4 8
@@ -6893,7 +6813,7 @@ INDIRI4
 CNSTI4 1
 SUBI4
 ASGNI4
-LABELV $1132
+LABELV $1098
 line 1569
 ;1569:	g_arenaservers.master.curvalue = value;
 ADDRGP4 g_arenaservers+496+64
@@ -7177,16 +7097,10 @@ ARGP4
 ADDRGP4 trap_R_RegisterShaderNoMip
 CALLI4
 pop
-line 1614
-;1614:	trap_R_RegisterShaderNoMip( ART_PUNKBUSTER );
-ADDRGP4 $1097
-ARGP4
-ADDRGP4 trap_R_RegisterShaderNoMip
-CALLI4
-pop
 line 1615
+;1614://	trap_R_RegisterShaderNoMip( ART_PUNKBUSTER );
 ;1615:}
-LABELV $1150
+LABELV $1116
 endproc ArenaServers_Cache 0 4
 export UI_ArenaServersMenu
 proc UI_ArenaServersMenu 0 4
@@ -7212,8 +7126,8 @@ ADDRGP4 UI_PushMenu
 CALLV
 pop
 line 1626
-;1626:}						  
-LABELV $1151
+;1626:}
+LABELV $1117
 endproc UI_ArenaServersMenu 0 4
 bss
 align 4
@@ -7765,38 +7679,6 @@ import rand
 import srand
 import qsort
 lit
-align 1
-LABELV $1097
-byte 1 109
-byte 1 101
-byte 1 110
-byte 1 117
-byte 1 47
-byte 1 97
-byte 1 114
-byte 1 116
-byte 1 47
-byte 1 112
-byte 1 98
-byte 1 108
-byte 1 111
-byte 1 103
-byte 1 111
-byte 1 0
-align 1
-LABELV $1081
-byte 1 80
-byte 1 117
-byte 1 110
-byte 1 107
-byte 1 98
-byte 1 117
-byte 1 115
-byte 1 116
-byte 1 101
-byte 1 114
-byte 1 58
-byte 1 0
 align 1
 LABELV $1077
 byte 1 109
